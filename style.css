@@ -150,14 +150,14 @@ label::before{
 }
 
 input{
-    margin-left: 37px;
-    padding-left: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
     width: 190px;
     height: 30px;
     border-radius: 7px;
 }
 
-input[type = "submit"]{
+input[type = "submit"],input[type = "button"]{
     position: relative;
     left:10%;
     background-color: #1c74d8;
@@ -178,8 +178,41 @@ input[type = "submit"]{
 input[type="submit"]:hover{
     background-color: #ff2b75 ;
 }
+input[type="button"]:hover{
+    background-color: #ff2b75 ;
+}
 
-@media ((min-width:362px) and (max-width:1024px) ){
+.mess-err{
+    display: none;
+    margin-top: 6px;
+    margin-left: 10px;
+    color: red;
+    font-size: 15px;
+}
+
+.mess-err::before{
+    content: "!  ";
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.color-err{
+    color: red;
+}
+
+.shadow-err{
+    box-shadow: 1px 5px 9px 1px red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.block{
+    display: block !important;
+}
+
+@media ((min-width:451px) and (max-width:1300px) ){
 
     .top{
     width: 170px;
@@ -220,10 +253,12 @@ input[type="submit"]:hover{
 
 }
 
-@media (max-width:360px){
+@media (max-width:450px){
+
 
     .form{
         margin-top: 80px;
+        width: 230px;
 
     }
      .top{
@@ -263,4 +298,12 @@ input[type="submit"]:hover{
         width: 100px;
     }
 
+}
+
+.info2{
+    display: none;
+}
+
+.submit{
+    display: none;
 }

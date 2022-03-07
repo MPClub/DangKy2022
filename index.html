@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Đăng ký thiết kế design web 2022</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montagu+Slab:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="page">
         <div class="block">
@@ -33,27 +35,124 @@
             </div>
         </div>
 
-        <div class="form">
-            <h1 class="title">Đăng ký</h1>
-            <form action="">
+    <div class="form">
+        <h1 class="title">Đăng ký</h1>
+        <form action="" id="form">
+            <div class="info1" style="display: block;">
                 <div>
                     <label for="name">Họ và tên</label>
                     <div class="input">
-                        <img src="./icon/user-large-solid.svg" alt="" class="icon">
-                        <input type="text" id = "" name = "name" placeholder="">
+                        <!-- <img src="./icon/user-large-solid.svg" alt="" class="icon"> -->
+                        <input  type="text" id="name" name="name" placeholder="" class="n1">
+                        <span class="mess-err"></span>
                     </div>
                 </div>
                 <div>
                     <label for="mssv">MSSV</label>
                     <div class="input">
-                        <img src="./icon/icons8-id-card-64.png" alt="" class="icon" style="width: 20px;">
-                        <input type="text" id="" name="mssv" placeholder="">
+                        <!-- <img src="./icon/icons8-id-card-64.png" alt="" class="icon" style="width: 20px;"> -->
+                        <input type="text" id="mssv" name="mssv" placeholder="" class="n1">
+                        <span class="mess-err"></span>
                     </div>
                 </div>
-                <input type="submit" value="Đồng ý">
-            </form>
-        </div>
+                <div class="input">
+                    <label for="Khoa">Khoa</label>
+                    <div>
+                        <input type="text" name="khoa" id="khoa" class="n1">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="mail">Mail OU</label>
+                    <div class="input">
+                        <input type="text" name="mail" id="mail" class="n1">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="sdt">Số điện thoại</label>
+                    <div class="input">
+                        <input type="text" name="sdt" id="sdt" class="n1">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div >
+                    <label for="link">Link faceBook</label>
+                    <div class="input">
+                        <input type="text" name="link" id="link" class="n1">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dong doi -->
+            <div class="info2"  >
+                <div>
+                    <label for="named">Tên thành viên đội</label>
+                    <div>
+                        <input type="text" name="" id="named">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="mssvd">MSSV</label>
+                    <div>
+                        <input type="text" name="" id="mssvd">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="maild">email</label>
+                    <div>
+                        <input type="text" name="" id="maild">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="khoad">Link faceBook</label>
+                    <div>
+                        <input type="text" name="" id="khoad">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="sdtd">Số điện thoại</label>
+                    <div>
+                        <input type="text" name="" id="stdd">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="linkd">Link faceBook</label>
+                    <div>
+                        <input type="text" name="" id="linkd">
+                        <span class="mess-err"></span>
+                    </div>
+                </div>
+
+            </div>
+            <input type="submit" value="Đồng ý" class="submit">
+            <input type="button" value="Tiếp theo" class="next">
+        </form>
     </div>
-    
+    </div>
+    <script src="./handleForm.js"></script>
+    <script >
+        required("#name");
+        required("#mssv");
+        isOu("#mail");
+        required("#sdt");
+        required("#link");
+        required("#mssv");
+        required("#khoa");
+
+        required("#named");
+        required("#mssvd");
+        isOu("#maild");
+        required("#stdd");
+        required("#linkd");
+        required("#khoad");
+    </script>
 </body>
+
 </html>
