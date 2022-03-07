@@ -213,7 +213,7 @@ input[type="button"]:hover{
     display: block !important;
 }
 
-@media ((min-width:451px) and (max-width:1300px) ){
+@media (max-width:1300px){
 
     .top{
     width: 170px;
@@ -252,10 +252,17 @@ input[type="button"]:hover{
         width: 130px;
     }
 
+    .img{
+        display: none;
+    }
+
 }
 
 @media (max-width:450px){
 
+    .img{
+        display: none;
+    }
 
     .form{
         margin-top: 80px;
@@ -309,3 +316,14 @@ input[type="button"]:hover{
     display: none;
 }
 
+.img{
+    position:fixed;
+    right: 0px;
+    bottom:-80px;
+    width: 600px;
+    
+}
+
+.img img{
+    width: 100%;
+}
