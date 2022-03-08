@@ -104,6 +104,7 @@ body{
     display: block;
     text-align: center;
     text-shadow: 0px 2px 4px #999999;
+    color: #e12667; 
 }
 
 .form{
@@ -160,7 +161,7 @@ input{
 
 input[type = "submit"],input[type = "button"]{
     position: relative;
-    left:15.5%;
+    left:20%;
     background-color: #1c74d8;
     width: 130px;
     height: 35px;
